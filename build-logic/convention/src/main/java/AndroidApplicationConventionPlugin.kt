@@ -1,5 +1,6 @@
-
 import com.android.build.api.dsl.ApplicationExtension
+import com.bibin.babu.software.developer.convention.ExtensionType
+import com.bibin.babu.software.developer.convention.configureBuildTypes
 import com.bibin.babu.software.developer.convention.configureKotlinAndroid
 import com.bibin.babu.software.developer.convention.libs
 import org.gradle.api.Plugin
@@ -15,20 +16,25 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
 
             }
 
-            extensions.configure<ApplicationExtension>{
-                defaultConfig{
-                    applicationId=libs.findVersion("projectApplicationId").get().toString()
+            extensions.configure<ApplicationExtension> {
+                defaultConfig {
+                    applicationId = libs.findVersion("projectApplicationId").get().toString()
 
-                    targetSdk=libs.findVersion("projectTargetSdkVersion").get().toString().toInt()
+                    targetSdk = libs.findVersion("projectTargetSdkVersion").get().toString().toInt()
 
-                    versionCode=libs.findVersion("projectVersionCode").get().toString().toInt()
-                    versionName=libs.findVersion("projectVersionName").get().toString()
+                    versionCode = libs.findVersion("projectVersionCode").get().toString().toInt()
+                    versionName = libs.findVersion("projectVersionName").get().toString()
                 }
 
                 configureKotlinAndroid(this)
-
+                configureBuildTypes(
+                    this,
+                    extensionType = ExtensionType.APPLICATION
+                )
 
             }
+
+
         }
 
     }
