@@ -36,4 +36,6 @@ dependencies {
 
     implementation(libs.org.mongodb.bson)
     implementation(projects.core.domain)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
 }

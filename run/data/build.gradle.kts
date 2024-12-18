@@ -43,4 +43,7 @@ dependencies {
     implementation(projects.core.domain)
     implementation(projects.run.domain)
     implementation(projects.core.database)
+
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
 }

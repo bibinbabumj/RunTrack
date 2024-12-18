@@ -41,4 +41,7 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(projects.core.domain)
     implementation(projects.core.presentation.designsystem)
+
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
 }
