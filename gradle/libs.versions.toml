@@ -128,3 +128,5 @@ mapsplatform-secrets-plugin = { id = "com.google.android.libraries.mapsplatform.
 
 runtrack-android-application = { id = "runtrack.android.application",version="unspecified" }
 runtrack-android-application-compose = { id = "runtrack.android.application.compose",version="unspecified" }
+runtrack-android-library = { id = "runtrack.android.library",version="unspecified" }
+runtrack-android-library-compose = { id = "runtrack.android.library.compose",version="unspecified" }
