@@ -38,5 +38,10 @@ gradlePlugin {
             implementationClass = "AndroidFeatureUiConventionPlugin"
         }
 
+        register("androidRoom") {
+            id = "runtrack.android.room"
+            implementationClass = "AndroidRoomConventionPlugin"
+        }
+
     }
 }
