@@ -132,6 +132,7 @@ runtrack-android-library = { id = "runtrack.android.library", version = "unspeci
 runtrack-android-library-compose = { id = "runtrack.android.library.compose", version = "unspecified" }
 runtrack-android-feature-ui = { id = "runtrack.android.feature.ui", version = "unspecified" }
 runtrack-android-room = { id = "runtrack.android.room", version = "unspecified" }
+runtrack-jvm-library= { id = "runtrack.jvm.library", version = "unspecified" }
 
 
 [bundles]
