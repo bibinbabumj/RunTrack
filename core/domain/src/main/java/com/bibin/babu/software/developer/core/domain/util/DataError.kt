@@ -1,5 +1,7 @@
 package com.bibin.babu.software.developer.run.domain.util
 
+import com.bibin.babu.software.developer.core.domain.util.Error
+
 sealed interface DataError : Error {
     enum class Network : DataError {
         REQUEST_TIMEOUT,
