@@ -14,3 +14,4 @@ val RuntrackDarkGray = Color(0xFF232624)
 val RuntrackWhite = Color(0xFFFAFAFA)
 val RuntrackDarkBlue = Color(0xFF0000BB)     // Dark blue
 val RuntrackDarkBlue5 = Color(0x0D0000BB)    // 5% opacity dark blue
+val RuntrackGreen = Color(0xFF05E70F)
