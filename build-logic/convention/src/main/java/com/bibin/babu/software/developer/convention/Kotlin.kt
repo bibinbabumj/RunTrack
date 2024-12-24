@@ -9,7 +9,7 @@ import org.gradle.kotlin.dsl.dependencies
 import org.gradle.kotlin.dsl.withType
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-internal fun Project.configureKotlinAndroid(commonExtension: CommonExtension<*, *, *, *, *>) {
+internal fun Project.configureKotlinAndroid(commonExtension: CommonExtension<*, *, *, *, *,*>) {
     commonExtension.apply {
         compileSdk = libs.findVersion("projectCompileSdkVersion").get().toString().toInt()
         defaultConfig.minSdk = libs.findVersion("projectMinSdkVersion").get().toString().toInt()

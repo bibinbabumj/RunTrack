@@ -5,8 +5,6 @@ plugins {
 android {
     namespace = "com.bibin.babu.software.developer.run.data"
 
-
-
 }
 
 dependencies {

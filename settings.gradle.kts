@@ -21,6 +21,7 @@ dependencyResolutionManagement {
 }
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
+
 rootProject.name = "RunTrack"
 
 include(":app")

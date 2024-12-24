@@ -9,7 +9,7 @@ import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
 
 internal fun Project.configureBuildTypes(
-    commonExtension: CommonExtension<*, *, *, *, *>,
+    commonExtension: CommonExtension<*, *, *, *, *,*>,
     extensionType: ExtensionType
 ) {
 
@@ -18,7 +18,7 @@ internal fun Project.configureBuildTypes(
             buildConfig = true
         }
 
-        val apiKey = gradleLocalProperties(rootDir).getProperty("API_KEY")
+        val apiKey = gradleLocalProperties(rootDir,providers).getProperty("API_KEY")
         when (extensionType) {
             ExtensionType.APPLICATION -> {
                 extensions.configure<ApplicationExtension> {
@@ -63,7 +63,7 @@ private fun BuildType.configureDebugBuildType(apiKey: String) {
 
 private fun BuildType.configureReleaseBuildType(
     apiKey: String,
-    commonExtension: CommonExtension<*, *, *, *, *>
+    commonExtension: CommonExtension<*, *, *, *,*, *>
 ) {
     buildConfigField("String", "APT_KEY", "\"$apiKey\"")
     buildConfigField("String", "BASE_URL", "\"https://runique.pl-coding.com:8080\"")

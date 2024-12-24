@@ -4,7 +4,6 @@ plugins {
 
 android {
     namespace = "com.bibin.babu.software.developer.core.presentation.designsystem"
-    compileSdk = 34
 }
 
 dependencies {
