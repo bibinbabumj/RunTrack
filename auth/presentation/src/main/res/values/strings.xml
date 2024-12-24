@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="run_track">RunTrack</string>
+    <string name="welcome_to_run_track">Welcome to RunTrack</string>
+    <string name="run_track_destription">Track your runs, set goals and achieve fitness milestones with our app</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+</resources>
